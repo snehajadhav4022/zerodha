@@ -9,9 +9,15 @@ public class Pojo {
 	public static WebDriver openChromeBrowser(String URL)
 	{
 	System.setProperty("webdriver.chrome.driver", "src" + File.separator +"test"+File.separator+"resources"+ File.separator +"driver"+ File.separator +"chromedriver.exe");
-    WebDriver  driver = new ChromeDriver();
+    WebDriver driver = new ChromeDriver();
     driver.manage().window().maximize();
     driver.get(URL);
     return driver;
+    
+  /*  System.setProperty("webdriver.chrome.driver", "src" + File.separator +"test"+File.separator+"resources"+ File.separator +"driver"+ File.separator +"chromedriver.exe");
+    WebDriver driver = new ChromeDriver();
+    driver.manage().window().maximize();
+    driver.get(URL);
+    return driver; */
 }
 }

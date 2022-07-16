@@ -20,7 +20,6 @@ WebDriver driver;
 	public void beforeClass()
 	{
 		driver = openChromeBrowser("https://kite.zerodha.com");
-		//driver.get("URL");
 	 /*   String title=driver.getCurrentUrl();
 	    if(title.contains("https://kite.zerodha.com/"))
 	    {
